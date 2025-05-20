@@ -30,9 +30,9 @@ pipeline {
 	stage('Build') {
 	    steps {
 	        sh '''
-	            echo [+] Compiling source files...
-	            mkdir -p classes
-	            javac -d classes src/Students/*.java
+    		echo [+] Compiling source files...
+    		mkdir -p classes
+    		javac -d classes Students_test/src/Students/*.java
 	        '''
 	    }
 	}
